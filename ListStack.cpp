@@ -20,7 +20,7 @@ const ValueType& ListStack:: top() const {
 }
 // проверка на пустоту
 bool ListStack:: isEmpty() const {
-    if (getNode(0)->next != nullptr) {
+    if (getNode(0)) {
         if (getNode(0)->value) {
             return false;
         }
